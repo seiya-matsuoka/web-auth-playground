@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+:root {
+  --page-background: #f8fafc;
+  --page-foreground: #0f172a;
+}
+
+/* 共通値を Tailwind CSS のユーティリティから参照できるようにする。 */
+@theme inline {
+  --color-background: var(--page-background);
+  --color-foreground: var(--page-foreground);
+}
