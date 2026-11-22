@@ -6,9 +6,9 @@ services:
     environment:
       POSTGRES_DB: web_auth_playground
       POSTGRES_USER: web_auth_playground
-      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}"
+      POSTGRES_PASSWORD: '${POSTGRES_PASSWORD:?Set POSTGRES_PASSWORD in .env}'
     ports:
-      - "127.0.0.1:${POSTGRES_PORT:-15433}:5432"
+      - '127.0.0.1:${POSTGRES_PORT:-15433}:5432'
     volumes:
       # PostgreSQL 18 の公式イメージは、この配下にバージョン別の保存先を作る。
       - pgdata:/var/lib/postgresql
