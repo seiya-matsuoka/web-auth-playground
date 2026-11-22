@@ -1,0 +1,7 @@
+/AGENTS.md
+/.env*
+/node_modules/
+/.next/
+/out/
+/package-lock.json
+/next-env.d.ts
